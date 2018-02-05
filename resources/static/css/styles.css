@@ -1,0 +1,23 @@
+@CHARSET "ISO-8859-1";
+body {
+    background-color: black;
+   	
+}
+
+#cuerpo{
+	background-image: url("img/fondo.png");
+	height: 500px;
+	background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#login{
+	position: absolute;
+	background-color: #F2F2F2;
+	padding: 25px;
+	margin-left: 40%;
+	margin-top: 8%;
+	
+}
+

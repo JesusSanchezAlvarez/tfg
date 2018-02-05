@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <!-- BASICS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>SALYYGANA</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="css/responsive-slider.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/animate-font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:400,300'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+
+      <link rel="stylesheet" href="css/style-registrar.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- skin -->
+  <link rel="stylesheet" href="skin/default.css">
+  <script src="mdb/js/popper.min.js"></script>
+  <script src="mdb/js/mdb.min.js"></script>
+   <script src="mdb/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="mdb/css/styleMd.css">
+  <link rel="stylesheet" href="mdb/css/mdb.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- =======================================================
+    Theme Name: Green
+    Theme URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+
+
+  <div class="header">
+    <section id="header" class="appear">
+
+      <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.1);" data-850="line-height:60px; height:60px; background-color:rgba(155,155,155,1);">
+          <img src="./img/logo.png" class="logo" href="#">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="fa fa-bars color-white"></span>
+					</button>
+          <h1 class="logo"><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">
+					</a></h1>
+        </div>
+        <div id="home" class="navbar-collapse collapse">
+          <ul id="cabecera" class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+           <li><a id="espan"  data-translate="cabecera-9"><img id="b-espan" src="img/icons/españa.png"></a></li>
+            <li><a id="ingles" data-translate="cabecera-10"><img id="b-ingles" src="img/icons/ingles.png"></a></li>
+            <li class="active"><a href="#header" data-translate="cabecera-1">Inicio</a></li>
+            <li><a class="a" href="#seccion-ocio" data-translate="cabecera-2">Ocio</a></li>
+            <li><a class="a" href="#viajes" data-translate="cabecera-3">Viajes</a></li>
+            <li><a class="a" href="#team"  data-translate="cabecera-4">Estudia en el extranjero</a></li>
+            <li id="elemento-lista"><a onclick="registrarUsuario()" class="a"  data-translate="cabecera-5" >Registrarse</a></li>
+            <li><a onclick="irBlog()" class="a" id="ir-blog"  data-translate="cabecera-6">Blog</a></li>
+            <li><a class="a" href="#section-contact"  data-translate="cabecera-7">Contact</a></li>
+          </ul>
+          <i id="icono-admin" onclick='window.open("administrar.html")' class="fa fa-cog fa-3x animated-hover"></i>
+        
+          <a class="text-rigth" id="usuario-cabecera"></a>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+
+
+    </section>
+  </div>
+
+
+  <div class="slider">
+    <div id="about-slider">
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="img/portada.jpg" class="img-responsive" id="imgH" alt="">
+            <div class="carousel-caption">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                  <h2 data-translate="h2-header-1">Recorre el mundo, descubre sin límites.. Por el mejor precio!!</h2>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img/portada3.jpg" class="img-responsive" id="imgH" alt="">
+            <div class="carousel-caption">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                  <h2 data-translate="h2-header-2">Sal de fiesta, elige una y entra por listas!!</h2>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+					<i class="fa fa-angle-left"></i>
+				</a>
+
+        <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+					<i class="fa fa-angle-right"></i>
+				</a>
+      </div>
+      <!--/#carousel-slider-->
+    </div>
+    <!--/#about-slider-->
+    
+  </div>
+  <!--/#slider-->
+  <section id="parallax1" class="section pad-top40 pad-bot40 mar-bot20" data-stellar-background-ratio="0.5">
+     <img src="img/pasarela.jpg" class="img-pasarela" alt="">
+    <div class="container ">
+      <div id="opinion-cuerpo" class="align-center pad-top40 pad-bot40">
+        <h4 id="autor1" class="color-white pad-top50"></h4>
+        <p id="op1" class="color-white"></p>
+        <a id="icono-opinion" onclick="irComentar()" class="z-depth-2"><i class="fa fa-cloud"></i></a>
+      </div>
+    </div>
+  </section>
+  
+  
+   
+<!-- section works -->
+  <section id="seccion-ocio" class="section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot40">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <h2 class="section-heading animated" data-animation="bounceInUp">Sal de fiesta x madrid</h2>
+            <p>Si tu ex te dice: "No vas a encontrar a nadie como yo" dile: "ESA ES LA IDEA" </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <nav id="filter" class="col-md-12 text-center">
+          <ul>
+            <li><a href="#" class="current btn-theme btn-small" data-filter="*">Todas</a></li>
+            <li><a href="#" class="current btn-theme btn-small" data-filter=".jueves">Jueves</a></li>
+             <li><a href="#" class="current btn-theme btn-small" data-filter=".viernes">Viernes</a></li>
+            <li><a href="#" class="btn-theme btn-small" data-filter=".sabado">Sábado</a></li>
+          </ul>
+        </nav>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="portfolio-items isotopeWrapper clearfix" id="3">
+
+              <article class="col-md-4 isotopeItem jueves viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca1.jpg" class="img-fluid z-depth-3"/>
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('1','./img/ocio/discoteca1.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+             <article class="col-md-4 isotopeItem techno viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca2.jpg" class="img-fluid z-depth-3"  />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('2','./img/ocio/discoteca2.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+
+             <article class="col-md-4 isotopeItem viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca3.jpg" class="img-fluid z-depth-3" alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('3','./img/ocio/discoteca3.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+             <article class="col-md-4 isotopeItem jueves viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca4.jpg" class="img-fluid z-depth-3" alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('4','./img/ocio/discoteca4.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+             <article class="col-md-4 isotopeItem jueves viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca5.jpg" class="img-fluid z-depth-3" alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('5','./img/ocio/discoteca5.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+             <article class="col-md-4 isotopeItem jueves viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca6.jpg" class="img-fluid z-depth-3"  alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('6','./img/ocio/discoteca6.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            <article class="col-md-4 isotopeItem viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca7.jpg" class="img-fluid z-depth-3"  alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('7','./img/ocio/discoteca7.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+           <article class="col-md-4 isotopeItem viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca8.jpg" class="img-fluid z-depth-3"  alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('8','./img/ocio/discoteca8.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+             <article class="col-md-4 isotopeItem jueves viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca9.png" class="img-fluid z-depth-3" alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('9','./img/ocio/discoteca9.png')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-md-4 isotopeItem viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca10.jpg" class="img-fluid z-depth-3"  alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('10','./img/ocio/discoteca10.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+               <article class="col-md-4 isotopeItem viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca11.jpeg" class="img-fluid z-depth-3"  alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('11','./img/ocio/discoteca11.jpeg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+               <article class="col-md-4 isotopeItem viernes sabado">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="img/ocio/discoteca12.jpg" class="img-fluid z-depth-3"  alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <a><i onclick="myFunctionFiesta('12','./img/ocio/discoteca12.jpg')" class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+      </section>
+   <section id="parallax1" class="section pad-top40 pad-bot40 mar-bot20" data-stellar-background-ratio="0.5">
+     <img src="img/pasarela.jpg" class="img-pasarela" alt="">
+    <div class="container ">
+      <div id="opinion-cuerpo" class="align-center pad-top40 pad-bot40">
+        <h4 id="autor2" class="color-white pad-top50"></h4>
+        <p id="op2" class="color-white"></p>
+        <a id="icono-opinion" onclick="irComentar()" class="z-depth-2"><i class="fa fa-cloud"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- viajes -->
+  <section id="viajes" class="section appear clearfix pad-bot5 bg-white">
+    <div class="container">
+      <div class="row mar-bot5">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <div class="wow bounceIn" data-animation-delay="7.8s">
+
+              <h2 class="section-heading animated">Que buscas?</h2>
+              <h4>Si quieres viajar, estas en el lugar idoneo.</h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mar-bot40">
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-h-square" aria-hidden="true"></i></figure>
+                  </div>
+                  <h2><a href="blog.html" >Hoteles por la cara</a></h2>
+                  <p>Encuentra la mejores ofertas de Hoteles a un precio que no te vas a creer, un mundo de ofertas lowcost, ofertas last minute. Accede a un mundo de ofertas sin precedentes..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="align-center">
+            <div class="wow bounceIn">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-plane" aria-hidden="true"></i></figure>
+                  </div>
+                  <h2><a href="#blog.html" >Vuelos Regalados</a></h2>
+                  <p>Encuentra la mejores ofertas de vuelos a un precio que no te vas a creer. Accede a un mundo de ofertas sin precedentes...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="align-center">
+            <div class="wow bounceIn">
+              <div class="service-col">
+                <div class="service-icon">
+                  <figure><i href="#xcape" class="fa fa-globe"></i></figure>
+                </div>
+                <h2><a href="#xcape" class="appear clearfix">Xcape</a></h2>
+                <p>Encuentra un mundo de experiencias sin limites, desde viajes a la nieve, a viajes al caribe....</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!--/services-->
+
+  <!-- spacer section:testimonial -->
+  <section id="parallax1" class="section pad-top40 pad-bot40 mar-bot20" data-stellar-background-ratio="0.5">
+     <img src="img/pasarela.jpg" class="img-pasarela" alt="">
+    <div class="container ">
+      <div id="opinion-cuerpo" class="align-center pad-top40 pad-bot40">
+        <h4 id="autor3" class="color-white pad-top50"></h4>
+        <p id="op3" class="color-white"></p>
+        <a id="icono-opinion" onclick="irComentar()" class="z-depth-2"><i class="fa fa-cloud"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- team -->
+  <section id="team" class="team-section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot10">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <div class="wow bounceIn">
+
+              <h2 class="section-heading animated" data-animation="bounceInUp">Our Team</h2>
+              <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-center mar-bot45">
+        <div class="col-md-4">
+          <div class="wow bounceIn" data-animation-delay="4.8s">
+            <div class="team-member">
+              <div class="profile-picture">
+                <figure><img src="img/members3.jpg" alt=""></figure>
+                <div class="profile-overlay"></div>
+                <div class="profile-social">
+                  <div class="icons-wrapper">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-detail">
+                <h4>Ron Evgeniy</h4>
+                <span>User experiences</span>
+              </div>
+              <div class="team-bio">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, fugiat, harum, adipisci accusantium minus asperiores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+
+          <div class="wow bounceIn">
+            <div class="team-member">
+              <div class="profile-picture">
+                <figure><img src="img/members1.jpg" alt=""></figure>
+                <div class="profile-overlay"></div>
+                <div class="profile-social">
+                  <div class="icons-wrapper">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-detail">
+                <h4>Alexander Chernov</h4>
+                <span>Web developer</span>
+              </div>
+              <div class="team-bio">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, fugiat, harum, adipisci accusantium minus asperiores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wow bounceIn">
+            <div class="team-member">
+              <div class="profile-picture">
+                <figure><img src="img/members2.jpg" alt=""></figure>
+                <div class="profile-overlay"></div>
+                <div class="profile-social">
+                  <div class="icons-wrapper">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-detail">
+                <h4>Jose Manuel</h4>
+                <span>Web designer</span>
+              </div>
+              <div class="team-bio">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, fugiat, harum, adipisci accusantium minus asperiores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- /team -->
+
+  <!-- spacer section:stats -->
+ <section id="parallax1" class="section pad-top40 pad-bot40 mar-bot20" data-stellar-background-ratio="0.5">
+     <img src="img/pasarela.jpg" class="img-pasarela" alt="">
+    <div class="container ">
+      <div id="opinion-cuerpo" class="align-center pad-top40 pad-bot40">
+        <h4 id="autor4" class="color-white pad-top50"></h4>
+        <p id="op4" class="color-white"></p>
+        <a id="icono-opinion" onclick="irComentar()" class="z-depth-2"><i class="fa fa-cloud"></i></a>
+      </div>
+    </div>
+  </section>
+  
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<section>
+<div class="wow bounceIn">
+      <h2 id="titulo-galeria" class="section-heading animated" data-animation="bounceInUp">Galeria de instagram</h2>
+      <p id="parrafo-galeria">Bienvenido a la galeria de instagram.</p>
+ </div>
+  <div class="container gal-container sinpadding">
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#1">
+          <img onClick="redireccionaInstagram('1')"  id="ins-1">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#2">
+          <img onClick="redireccionaInstagram('2')" id="ins-2">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#3">
+          <img onClick="redireccionaInstagram('3')" id="ins-3" >
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#4">
+          <img onClick="redireccionaInstagram('4')" id="ins-4">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#5">
+          <img onClick="redireccionaInstagram('5')" id="ins-5" >
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#6">
+          <img onClick="redireccionaInstagram('6')" id="ins-6" >
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#7">
+          <img onClick="redireccionaInstagram('7')" id="ins-7">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#8">
+          <img onClick="redireccionaInstagram('8')" id="ins-8">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#9">
+          <img onClick="redireccionaInstagram('9')" id="ins-9" >
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#10">
+          <img onClick="redireccionaInstagram('10')" id="ins-10">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#11">
+          <img onClick="redireccionaInstagram('11')" id="ins-11">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#12">
+          <img onClick="redireccionaInstagram('12')" id="ins-12">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#13">
+          <img onClick="redireccionaInstagram('13')" id="ins-13">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#14">
+          <img onClick="redireccionaInstagram('14')" id="ins-14" >
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#15">
+          <img onClick="redireccionaInstagram('15')" id="ins-15" >
+        </a>
+      </div>
+    </div>
+    
+</section>
+<footer>
+</footer>
+
+ <section id="parallax1" class="section pad-top40 pad-bot40 mar-bot20" data-stellar-background-ratio="0.5">
+     <img src="img/pasarela.jpg" class="img-pasarela" alt="">
+    <div class="container ">
+      <div id="opinion-cuerpo" class="align-center pad-top40 pad-bot40">
+        <h4 id="autor5" class="color-white pad-top50"></h4>
+        <p id="op5" class="color-white"></p>
+        <a id="icono-opinion" onclick="irComentar()" class="z-depth-2"><i class="fa fa-cloud"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section works -->
+  <section id="xcape" class="section appear clearfix">
+    <div class="container wow bounceIn">
+
+      <div class="row mar-bot40">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <h2 class="section-heading animated" data-animation="bounceInUp">Nuestras experiencias!!</h2>
+            <p>19 años más tarde...
+              Xcape es hoy uno de los referentes a nivel mundial en viajes de estudios organizados. Comenzamos con el slogan de “¿Que harás llegando a…..?” pues el objetivo de nuestra empresa es que experimentes al máximo el destino que elijas, con las máximas garantías, sabiendo que vas a hacer en cada momento y sin tener que preocuparte por perder tiempo en organizar cada día.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="portfolio-items isotopeWrapper clearfix" id="3">
+               <article class="col-md-4 isotopeItem photography">
+                <div class="portfolio-item">
+                  <div class="wow bounceIn">
+                    <img src="img/experiencias/img2.jpg" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Project name 2</a></h5>
+                       <h5><a href="#">Descripcion</a></h5>
+                      <a href="img/experiencias/img2.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-md-4 isotopeItem photography">
+                <div class="portfolio-item">
+                  <div class="wow bounceIn">
+                    <img src="img/experiencias/img2.jpg" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Project name 2</a></h5>
+                       <h5><a href="#">Descripcion</a></h5>
+                      <a href="img/experiencias/img2.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+
+              <article class="col-md-4 isotopeItem photography">
+                <div class="portfolio-item">
+                  <div class="wow rotateInDownRight">
+                    <img src="img/experiencias/img3.jpg" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Project name 3</a></h5>
+                       <h5><a href="#">Descripcion</a></h5>
+                      <a href="img/experiencias/img3.jpg" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+             </div>
+		<div>
+        		<a id="div-boton-xcape"  class="btn btn-warning btn-responsive" href="xcape.html">Ir a pagina Xcape</a>
+        </div>
+          </div>
+
+ 		
+        </div>
+       
+      </div>
+
+    </div>
+
+  </section>
+ <section id="parallax1" class="section pad-top40 pad-bot40 mar-bot20" data-stellar-background-ratio="0.5">
+     <img src="img/pasarela.jpg" class="img-pasarela" alt="">
+    <div class="container ">
+      <div id="opinion-cuerpo" class="align-center pad-top40 pad-bot40">
+        <h4 id="autor6" class="color-white pad-top50"></h4>
+        <p id="op6" class="color-white"></p>
+        <a id="icono-opinion" onclick="irComentar()" class="z-depth-2"><i class="fa fa-cloud"></i></a>
+      </div>
+    </div>
+  </section>
+  
+<section id="ofertas">
+<div class="wow bounceIn">
+      <h2 id="titulo-galeria" class="section-heading animated" data-animation="bounceInUp">Galeria de ofertas</h2>
+      <p id="parrafo-galeria">Disfruta de las mejores ofertas especiales.</p>
+ </div>
+  <div class="container gal-container sinpadding">
+    <article class="col-md-4 isotopeItem photography gal-item-ofertas">
+                <div class="portfolio-item">
+                  <div class="wow rotateInDownRight gal-item-ofertas">
+                    <img  id="img-of-0" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center resize">
+                    <div class="folio-info gal-item-ofertas resize">
+                      <h5><a href="#">Project name 3</a></h5>
+                       <h5><a href="#">Descripcion</a></h5>
+                      <a id="href-of-0" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+    </article>
+     <article class="col-md-4 isotopeItem photography gal-item-ofertas">
+                <div class="portfolio-item">
+                  <div class="wow rotateInDownRight">
+                    <img class="resize" id="img-of-1" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center resize">
+                    <div class="folio-info">
+                      <h5><a href="#">Project name 3</a></h5>
+                       <h5><a href="#">Descripcion</a></h5>
+                      <a id="href-of-1" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+    </article>
+     <article class="col-md-4 isotopeItem photography gal-item-ofertas">
+                <div class="portfolio-item">
+                  <div class="wow rotateInDownRight">
+                    <img class="resize" id="img-of-2" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center resize">
+                    <div class="folio-info">
+                      <h5><a href="#">Project name 3</a></h5>
+                       <h5><a href="#">Descripcion</a></h5>
+                      <a id="href-of-2" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+    </article>
+    
+</div>
+    
+</section>
+
+ <section id="parallax1-ofertas" class="section pad-top40 pad-bot40 mar-bot20" data-stellar-background-ratio="0.5">
+     <img src="img/pasarela.jpg" class="img-pasarela" alt="">
+    <div class="container ">
+      <div id="opinion-cuerpo" class="align-center pad-top40 pad-bot40">
+        <h4 id="autor7" class="color-white pad-top50"></h4>
+        <p id="op7" class="color-white"></p>
+        <a id="icono-opinion" onclick="irComentar()" class="z-depth-2"><i class="fa fa-cloud"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="section-contact" class="section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot40">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <h2 class="section-heading animated" data-animation="bounceInUp">Contact us</h2>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <div class="text-center"><button type="submit" class="line-btn green">Send Message</button></div>
+          </form>
+        </div>
+        <!-- ./span12 -->
+      </div>
+
+    </div>
+  </section>
+  <!-- map -->
+  <section id="section-map" class="clearfix">
+    <div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
+  </section>
+
+  <section id="footer" class="section footer">
+    <div class="container">
+      <div class="row animated opacity mar-bot0" data-andown="fadeIn" data-animation="animation">
+        <div class="col-sm-12 align-center">
+          <ul class="social-network social-circle">
+            <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row align-center copyright">
+        <div class="col-sm-12">
+          <p>&copy; GREEN Theme</p>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Green
+            -->
+            <a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- The Modal -->
+<div id="myModal" class="modal fadeIn">
+  <div id="append">
+  </div>
+  <!-- Modal content -->
+   <span class="close">&times;</span>
+  <div id="popup" class="modal-content">
+
+  </div>
+ </div>
+ 
+ <div id="myModal2" class="modal fadeIn">
+  <div id="append2">
+  </div>
+  <!-- Modal content -->
+   <span class="close">&times;</span>
+  <div id="popup2" class="modal-content">
+
+  </div>
+ </div>
+ 
+ 
+ <!-- REGISTRAR USUARIO-->
+
+ 
+  <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="js/jquery.js"></script>
+   <script src="js/jqueryTranslator.js"></script>
+  
+  <script src="js/jquery.easing.1.3.js"></script>
+   <script  src="js/traducir.js"></script>
+   <script>
+    (function(){
+    		$("[data-translate]").jqTranslate('json/index',{defaultLang:'es'});
+    })();
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
+  <script src="js/jquery.isotope.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/fancybox/jquery.fancybox.pack.js"></script>
+  <script src="js/skrollr.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/jquery.localScroll.js"></script>
+  <script src="js/stellar.js"></script>
+  <script src="js/responsive-slider.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/registrar-usuario.js"></script>
+   <script src="mdb/js/popper.min.js"></script>
+  <script src="mdb/js/mdb.min.js"></script>
+   <script src="mdb/js/bootstrap.min.js"></script>
+   <script src="js/get-instagram.js"></script>
+    <script  src="js/registrar.js"></script>
+    <script  src="./incluirUsuarioCabecera.js"></script> 
+	   <script  src="js/funcion-opinion.js"></script>
+	    <script  src="js/comprobarSiRegistrado.js"></script>
+    <script  src="js/redireccionar.js"></script>
+	     <script  src="js/añadir-comentario.js"></script>
+	   <script  src="js/incluir-opiniones.js"></script>
+	    <script  src="js/incluir-ofertas.js"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+  <script src="contactform/contactform.js"></script>
+   
+
+</body>
+
+</html>

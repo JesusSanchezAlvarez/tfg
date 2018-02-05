@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Pagina principal usuario</title>
+		<link rel="stylesheet"  href="css/styles.css"/>
+		<link rel="stylesheet"  href="css/style2.css"/>
+		<script src="jquery.min.js"></script>
+		<script src="comprobarInicioSesion.js" ></script>
+		<script src="incluirListaPeliculas.js"></script>
+		<style type="text/css">
+
+#lista2 {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+#boton{
+	background-color:#FF3333;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #662828;
+}
+.boton:hover {
+	background-color:#5cbf2a;
+}
+.boton:active {
+	position:relative;
+	top:1px;
+}
+
+#lista2 ol {
+    margin: 0 0 0 2em; 
+}
+
+#lista2 li{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em .8em;
+    *padding: .4em;
+    margin: .5em 0 .5em 2.5em;
+    background: #ddd;
+    color: #444;
+    text-decoration: none;
+    transition: all .3s ease-out;   
+}
+
+#lista2 li:hover{
+    background: #eee;
+}   
+
+#lista2 li:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -2.5em;
+    top: 50%;
+    margin-top: -1em;
+    background: #fa8072;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
+#lista2 li:after{
+    position: absolute; 
+    content: '';
+    border: .5em solid transparent;
+    left: -1em;
+    top: 50%;
+    margin-top: -.5em;
+    transition: all .3s ease-out;               
+}
+
+#lista2 li:hover:after{
+    left: -.5em;
+    border-left-color: #fa8072;             
+}
+</style>
+    
+	</head>
+	
+	<body>
+		<div id = "cabecera">
+			<h1 style = "color : red;">NITFLEX</h1>
+		</div>
+	<ol id="lista2">
+          <li>Titulo:
+          	 <input type="text" id="titulo" name='titulo' />
+          </li>
+           <li>Director:
+          	 <input type="text"  id='director' name='director'  />
+          </li>
+           <li>Etiquetas:
+          	 <input type="text" id='etiquetas' name='etiquetas'  />
+          </li>
+</ol>
+  <button id="boton" class="submit" onclick="pincharBotonF()" type="submit">Buscar</button>
+<ul id="lista"></ul>
+		
+
+	</body>
+</html>

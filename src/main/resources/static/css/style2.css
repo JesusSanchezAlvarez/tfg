@@ -1,0 +1,99 @@
+.col-md-4,.col-sm-6{
+	padding-right: 3px;
+padding-left: 3px;
+}
+
+.line-btn,
+input[type="submit"],
+button[type="submit"] {
+  font-weight: bold;
+  color: #000000;
+  background-image: none;
+  background-color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 50px;
+  cursor: pointer;
+  border: 2px solid #000000;
+  white-space: nowrap;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  display: inline-block;
+}
+.line-btn.small,
+input[type="submit"].small,
+button[type="submit"].small {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+}
+.line-btn.big,
+input[type="submit"].big,
+button[type="submit"].big {
+  height: 60px;
+  line-height: 60px;
+  padding: 0 70px;
+}
+.line-btn.blue,
+input[type="submit"].blue,
+button[type="submit"].blue {
+  background: #009eca;
+  border: none;
+  color: #ffffff;
+}
+.line-btn.lightblue,
+input[type="submit"].lightblue,
+button[type="submit"].lightblue {
+  background: #58c5c0;
+  border: none;
+  color: #ffffff;
+}
+.line-btn.darkblue,
+input[type="submit"].darkblue,
+button[type="submit"].darkblue {
+  background: #42555c;
+  border: none;
+  color: #ffffff;
+}
+.line-btn.red,
+input[type="submit"].red,
+button[type="submit"].red {
+  background: #e74c3c;
+  border: none;
+  color: #ffffff;
+}
+.line-btn.green,
+input[type="submit"].green,
+button[type="submit"].green {
+  background: #417630;
+  border: none;
+  color: #ffffff;
+}
+.line-btn.orange,
+input[type="submit"].orange,
+button[type="submit"].orange {
+  background: #f6ba70;
+  border: none;
+  color: #ffffff;
+}
+.line-btn.light,
+input[type="submit"].light,
+button[type="submit"].light {
+  background: #dddddd;
+  color: #000000;
+  border: none;
+}
+.line-btn.light:hover,
+input[type="submit"].light:hover,
+button[type="submit"].light:hover {
+  color: #ffffff;
+  background: #417630;
+}

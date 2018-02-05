@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet"  href="css/styles.css"/>
+		<meta charset="utf-8">
+		<title>Login</title>
+	</head>
+	
+	<body>
+		<div id = "cabecera">
+			<h1 style = "color : red;">NITFLEX</h1>
+		</div>
+		
+		<div id = "cuerpo">
+			<div id = "login">
+				<h2>Iniciar sesion<span  th:text="${usuario.bloqueado}"/><span  th:text="${intento}"/></h2>
+				<form action = "/comprobarUs" method = "post">
+					Usuario<br>
+					<input type = "text" name = "nombre"><br>
+					
+					Contraseña<br>
+					<input type = "password" name = "contraseña"><br>
+						
+					<input style = "color : white; background : red; border : red; margin-top: 10px;" type = "submit" value = "iniciar sesion" 
+					onclick="mostrarUsuarioIn(intento)"><br>
+				</form>
+			</div>
+		</div>
+	</body>
+	
+</html>
